@@ -9,9 +9,10 @@ execute pathogen#infect()
 """""""""""""""""" End Pathogen Config
 
 
-
-
-
+" Include tags
+set tags+=~/.vim/tags/clang.tags
+set tags+=~/.vim/tags/ubuntuSys.tags
+set tags+=~/.vim/tags/engine.tags
 
 
 " 开启文件类型侦测
