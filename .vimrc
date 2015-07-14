@@ -21,8 +21,17 @@ filetype on
 filetype plugin on
 
 
+"""""""""""""""""" Short Cast
 
+" F12函数定义查找
+:map <F12> <Esc> <Esc> <C-]>
+:map! <F12> <Esc> <Esc> <F12>
 
+" F10查找列表
+:map <F10> <Esc> <Esc> :ts <CR>
+:map! <F10> <Esc> <Esc> <F10>
+
+"""""""""""""""""" End Short Cast
 
 
 
