@@ -9,16 +9,32 @@ execute pathogen#infect()
 """""""""""""""""" End Pathogen Config
 
 
-" Include tags
-set tags+=~/.vim/tags/clang.tags
-set tags+=~/.vim/tags/ubuntuSys.tags
-set tags+=~/.vim/tags/engine.tags
+
+
+"""""""""""""""""" Include Tags
+
+" sudo ctags -R --c-kinds=+p --fields=+iaS --extra=+q
+set tags+=/usr/local/include/tags
+set tags+=/usr/include/tags
+set tags+=~/WorkSpace/engine/include/tags
+
+"""""""""""""""""" End Include Tags
+
+
+
 
 
 " 开启文件类型侦测
 filetype on
 " 根据侦测到的不同类型加载对应的插件
 filetype plugin on
+
+
+
+
+
+
+
 
 
 """""""""""""""""" Short Cast
@@ -41,14 +57,11 @@ filetype plugin on
 
 
 
-
-
-
 """""""""""""""""" UI Config
 
 " 设置主题
 set background=dark
-colorscheme molokai
+"colorscheme molokai
 
 " 禁止显示滚动条
 set guioptions-=l
