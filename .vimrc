@@ -201,7 +201,7 @@ let NERDTreeAutoDeleteBuffer=1
 
 """""""""""""""""" Include Tags
 
-" sudo ctags -R --c-kinds=+p --fields=+iaS --extra=+q
+" sudo ctags -R --c-kinds=+lpx --fields=+aiKlmnSz --extra=+fq
 set tags+=/usr/local/include/tags
 set tags+=/usr/include/tags
 set tags+=~/WorkSpace/engine/include/tags
